@@ -295,15 +295,29 @@
             
             <div class="gallery-grid">
                 <!-- Large Video Box -->
-                <div class="media-box">
-                    <video poster="thumb1.jpg" loop muted onmouseover="this.play()" onmouseout="this.pause()">
-                        <source src="mycideo.mp4" type="video/mp4">
-                    </video>
-                    <div class="media-overlay">
-                        <h4>Wet & Wild</h4>
-                        <p>Watch the full video in the private section</p>
-                    </div>
-                </div>
+              <div class="media-box">
+    <!-- added autoplay, muted, and playsinline -->
+    <video poster="thumb1.jpg" 
+           loop 
+           muted 
+           autoplay 
+           playsinline 
+           webkit-playsinline
+           style="width: 100%; height: 100%; object-fit: cover;"
+           onmouseover="this.play()" 
+           onmouseout="this.pause()">
+        
+        <!-- Try it WITHOUT the slash first if everything is in one file -->
+        <source src="mycideo.mp4" type="video/mp4">
+        <!-- Backup option if the first one fails -->
+        <source src="./mycideo.mp4" type="video/mp4">
+    </video>
+    
+    <div class="media-overlay">
+        <h4>Wet & Wild</h4>
+        <p>Watch the full video in the private section</p>
+    </div>
+</div>
 
                 <!-- Repeatable Image Box -->
                 <div class="media-box">
@@ -327,7 +341,7 @@
         <h4 class="exotic-text" style="letter-spacing: 3px;">SINFUL ACCESS</h4>
         <p style="font-size: 13px; font-weight: 300;">Can you handle the full view?</p>
         
-        <a href="https://wa.me/14155984726?text=I%20want%20to%20unlock%20the%20VIP%20gallery.%20Show%20me%20the%20unblurred%20version!" 
+        <a href="https://wa.me/16507629764?text=I%20want%20to%20unlock%20the%20VIP%20gallery.%20Show%20me%20the%20unblurred%20version!" 
            class="btn-nasty py-2">
            SEND TIPS TO UNLOCK
         </a>
