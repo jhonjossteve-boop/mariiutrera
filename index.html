@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariiutrera — Premium Content</title>
+  <meta name="description" content="Exclusive premium content by Mariiutrera. Join thousands of fans for daily photos, HD videos, and private access." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Mariiutrera — Premium Content" />
+  <meta property="og:description" content="Exclusive premium content. Daily photos, HD videos, private WhatsApp access." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===================== AGE GATE ===================== -->
+<div id="age-gate">
+  <div class="logo-text">Mariiutrera</div>
+  <div class="divider"></div>
+  <h2>Adult Content Warning</h2>
+  <p>This website contains adult material that is only suitable for those 18 years or older. By entering, you confirm you are of legal age in your jurisdiction and agree to view adult content.</p>
+  <div class="age-btns">
+    <button class="btn-enter" onclick="enterSite()">I AM 18+ &mdash; ENTER</button>
+    <button class="btn-exit" onclick="exitSite()">EXIT</button>
+  </div>
+</div>
+
+<!-- ===================== SITE ===================== -->
+<div id="site" style="display:none;">
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo" onclick="showPage('page-home')" style="cursor:pointer;">Mariiutrera</div>
+    <div class="nav-links">
+      <a data-page="page-home" onclick="showPage('page-home')">Home</a>
+      <a data-page="page-home" onclick="scrollToSection('gallery')">Gallery</a>
+      <a data-page="page-home" onclick="scrollToSection('pricing')">Pricing</a>
+      <a data-page="page-pay" onclick="showPage('page-pay')">How to Pay</a>
+      <a data-page="page-vip" onclick="showPage('page-vip')">VIP WhatsApp</a>
+    </div>
+    <div class="nav-right">
+      <button class="translate-btn" onclick="openTranslate()" title="Translate">
+        &#127760; Translate
+      </button>
+      <button id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu">
+    <a data-page="page-home" onclick="showPage('page-home')">Home</a>
+    <a data-page="page-home" onclick="scrollToSection('gallery')">Gallery</a>
+    <a data-page="page-home" onclick="scrollToSection('pricing')">Pricing</a>
+    <a data-page="page-pay" onclick="showPage('page-pay')">How to Pay</a>
+    <a data-page="page-vip" onclick="showPage('page-vip')">VIP WhatsApp</a>
+  </div>
+
+  <!-- GOOGLE TRANSLATE (hidden, triggered by button) -->
+  <div id="google_translate_element"></div>
+
+  <!-- ==================== PAGE: HOME ==================== -->
+  <div id="page-home" class="page active">
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-noise"></div>
+      <div class="hero-content">
+        <div class="hero-badge fade-up">&#10024; Exclusive Premium Content</div>
+        <h1 class="hero-name fade-up">Mariiutrera</h1>
+        <p class="hero-tagline fade-up">Where Fantasy Meets Reality</p>
+        <p class="hero-bio fade-up">
+          Step into my world — a universe of raw beauty, intimate moments, and exclusive content
+          crafted just for you. I create what others only dream about.
+          Join my inner circle and experience something truly unforgettable.
+        </p>
+        <div class="hero-btns fade-up">
+          <button class="btn-primary" onclick="scrollToSection('pricing')">Subscribe Now</button>
+          <button class="btn-outline" onclick="scrollToSection('gallery')">See My Content</button>
+        </div>
+      </div>
+      <div class="scroll-hint">Scroll</div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div>
+            <div class="stat-num" data-target="10000" data-suffix="+" data-prefix="">0</div>
+            <div class="stat-label">Active Fans</div>
+          </div>
+          <div>
+            <div class="stat-num" data-target="500" data-suffix="+" data-prefix="">0</div>
+            <div class="stat-label">Exclusive Photos</div>
+          </div>
+          <div>
+            <div class="stat-num" data-target="200" data-suffix="+" data-prefix="">0</div>
+            <div class="stat-label">HD Videos</div>
+          </div>
+          <div>
+            <div class="stat-num" data-target="100" data-suffix="%" data-prefix="">0</div>
+            <div class="stat-label">Private &amp; Secure</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="avatar-wrap fade-up">
+            <div class="avatar-circle">
+              <span class="avatar-initial">M</span>
+            </div>
+          </div>
+          <div class="fade-up">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">The Woman Behind the Fantasy</h2>
+            <p style="color:rgba(240,238,248,0.75); margin-bottom:1rem; line-height:1.85;">
+              I am Mariiutrera — creator, artist, and your most intimate secret. I pour my passion
+              into every piece of content I make. What you get with me is authenticity, creativity,
+              and a genuine connection unlike anything else.
+            </p>
+            <p style="color:rgba(240,238,248,0.65); margin-bottom:1.75rem; line-height:1.85;">
+              My content is for those who appreciate quality over quantity. Daily drops, weekly
+              video releases, and personal responses to every subscriber. This is not just content
+              — this is an experience.
+            </p>
+            <div class="about-tags">
+              <span class="tag">Daily Content</span>
+              <span class="tag">HD Videos</span>
+              <span class="tag">1-on-1 Chat</span>
+              <span class="tag">Custom Requests</span>
+              <span class="tag">100% Authentic</span>
+              <span class="tag">Private &amp; Discreet</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="container">
+        <div style="text-align:center;" class="fade-up">
+          <div class="section-label">Exclusive Feed</div>
+          <h2 class="section-title">Unlock the Collection</h2>
+          <p class="section-sub" style="margin:0 auto 0.5rem;">
+            Hundreds of exclusive photos and videos waiting behind the lock.
+            Subscribe to access the full library.
+          </p>
+        </div>
+        <div class="gallery-grid" style="margin-top:3rem;">
+          <!-- 12 blurred cards, cycling through 4 gradient bg styles -->
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-1"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">Unlock for $15</div>
+            </div>
+          </div>
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-3"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">Unlock for $15</div>
+            </div>
+          </div>
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-2"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">Unlock for $15</div>
+            </div>
+          </div>
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-4"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">Unlock for $35</div>
+            </div>
+          </div>
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-1"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">Unlock for $35</div>
+            </div>
+          </div>
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-3"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">Unlock for $35</div>
+            </div>
+          </div>
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-2"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">VIP Only</div>
+            </div>
+          </div>
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-4"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">VIP Only</div>
+            </div>
+          </div>
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-1"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">VIP Only</div>
+            </div>
+          </div>
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-3"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">Private Access</div>
+            </div>
+          </div>
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-2"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">Private Access</div>
+            </div>
+          </div>
+          <div class="gallery-card fade-up" onclick="scrollToSection('pricing')">
+            <div class="bg bg-4"></div>
+            <div class="gallery-overlay">
+              <div class="lock-icon">&#128274;</div>
+              <div class="unlock-text">Private Access</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <div class="container">
+        <div style="text-align:center;" class="fade-up">
+          <div class="section-label">Membership</div>
+          <h2 class="section-title">Choose Your Access Level</h2>
+          <p class="section-sub" style="margin:0 auto;">
+            Pick the tier that fits you. Upgrade or cancel anytime. All subscriptions are private and discreet.
+          </p>
+        </div>
+        <div class="pricing-grid">
+
+          <!-- BASIC -->
+          <div class="price-card fade-up">
+            <div class="tier-name">Basic Fan</div>
+            <div class="tier-price">$15</div>
+            <div class="tier-period">per month</div>
+            <div class="tier-divider"></div>
+            <ul class="tier-features">
+              <li>Daily exclusive photos</li>
+              <li>Behind-the-scenes content</li>
+              <li>Access to subscriber chat</li>
+              <li>50+ photos per week</li>
+              <li>Early access announcements</li>
+            </ul>
+            <button class="tier-btn outline" onclick="showPage('page-pay')">Subscribe — $15/mo</button>
+          </div>
+
+          <!-- VIP -->
+          <div class="price-card featured fade-up">
+            <div class="popular-badge">Most Popular</div>
+            <div class="tier-name">VIP Access</div>
+            <div class="tier-price">$35</div>
+            <div class="tier-period">per month</div>
+            <div class="tier-divider"></div>
+            <ul class="tier-features">
+              <li>Everything in Basic Fan</li>
+              <li>HD Videos — weekly drops</li>
+              <li>1-on-1 DM access</li>
+              <li>Exclusive live streams</li>
+              <li>200+ content pieces per month</li>
+              <li>Priority support &amp; responses</li>
+            </ul>
+            <button class="tier-btn primary" onclick="showPage('page-pay')">Subscribe — $35/mo</button>
+          </div>
+
+          <!-- WHATSAPP -->
+          <div class="price-card fade-up">
+            <div class="tier-name">Private WhatsApp</div>
+            <div class="tier-price">$75</div>
+            <div class="tier-period">per month</div>
+            <div class="tier-divider"></div>
+            <ul class="tier-features">
+              <li>Everything in VIP Access</li>
+              <li>Direct WhatsApp line access</li>
+              <li>Real-time 1-on-1 conversations</li>
+              <li>Custom content requests</li>
+              <li>Voice messages included</li>
+              <li>Completely private &amp; discreet</li>
+            </ul>
+            <button class="tier-btn outline" onclick="showPage('page-vip')">Subscribe — $75/mo</button>
+          </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;" class="fade-up">
+          <p style="color:var(--muted); font-size:0.85rem;">
+            &#128274;&nbsp; All transactions are 100% private and discreet.
+            Need help? <span style="color:var(--primary); cursor:pointer;" onclick="showPage('page-pay')">See payment instructions.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section style="background:linear-gradient(135deg, rgba(232,48,154,0.12), rgba(123,47,255,0.12)); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:4rem 2rem; text-align:center;">
+      <div class="container fade-up">
+        <h2 style="font-size:clamp(1.5rem,4vw,2.5rem); font-weight:800; margin-bottom:1rem;">
+          Ready to Join the Inner Circle?
+        </h2>
+        <p style="color:var(--muted); margin-bottom:2rem; font-size:1rem;">
+          Over 10,000 fans already inside. Don't miss out on daily exclusive content.
+        </p>
+        <button class="btn-primary" onclick="showPage('page-pay')">Subscribe Now</button>
+      </div>
+    </section>
+
+    <!-- FOOTER (home) -->
+    <footer>
+      <div class="footer-logo">Mariiutrera</div>
+      <div class="footer-links">
+        <a onclick="showPage('page-home')">Home</a>
+        <a onclick="scrollToSection('gallery')">Gallery</a>
+        <a onclick="scrollToSection('pricing')">Pricing</a>
+        <a onclick="showPage('page-pay')">How to Pay</a>
+        <a onclick="showPage('page-vip')">VIP WhatsApp</a>
+      </div>
+      <p>This website contains adult content and is intended for individuals 18 years of age or older.<br />
+      All content is original and copyrighted. Unauthorized reproduction is prohibited.<br />
+      &copy; 2025 Mariiutrera. All rights reserved.</p>
+    </footer>
+
+  </div><!-- /page-home -->
+
+
+  <!-- ==================== PAGE: HOW TO PAY ==================== -->
+  <div id="page-pay" class="page">
+    <div style="padding-top:64px;">
+      <section id="how-to-pay">
+        <div class="container">
+          <div style="text-align:center; margin-bottom:3rem;" class="fade-up">
+            <div class="section-label">Payment Methods</div>
+            <h1 class="section-title">How to Subscribe</h1>
+            <p class="section-sub" style="margin:0 auto;">
+              Choose your preferred payment method below. All payments are processed
+              manually for your privacy. Access is granted within 24 hours.
+            </p>
+          </div>
+
+          <div class="pay-grid">
+
+            <!-- CASHAPP -->
+            <div class="pay-card fade-up">
+              <div class="pay-header">
+                <div class="pay-icon cashapp">&#9989;</div>
+                <div>
+                  <div class="pay-title">CashApp</div>
+                  <div class="pay-sub">Instant &bull; USA</div>
+                </div>
+              </div>
+              <ul class="pay-steps">
+                <li><span class="step-num">1</span> Download the CashApp app on your phone</li>
+                <li><span class="step-num">2</span> Tap the $ icon and search the cashtag below</li>
+                <li><span class="step-num">3</span> Enter your subscription amount ($15, $35, or $75)</li>
+                <li><span class="step-num">4</span> In the note, write: BASIC, VIP, or WHATSAPP</li>
+                <li><span class="step-num">5</span> Send payment and screenshot the confirmation</li>
+                <li><span class="step-num">6</span> DM me the screenshot on Instagram</li>
+              </ul>
+              <div class="address-box" style="margin-top:1.25rem;">
+                <div>
+                  <div style="font-size:0.7rem; color:var(--muted); margin-bottom:0.25rem; text-transform:uppercase; letter-spacing:0.08em;">CashApp Cashtag</div>
+                  <div class="address-text" id="cashapp-addr">$mariiutrera</div>
+                </div>
+                <button class="copy-btn" onclick="copyText('$mariiutrera', this)">Copy</button>
+              </div>
+            </div>
+
+            <!-- PAYPAL -->
+            <div class="pay-card fade-up">
+              <div class="pay-header">
+                <div class="pay-icon paypal">&#128179;</div>
+                <div>
+                  <div class="pay-title">PayPal</div>
+                  <div class="pay-sub">Friends &amp; Family only</div>
+                </div>
+              </div>
+              <ul class="pay-steps">
+                <li><span class="step-num">1</span> Open PayPal app or website</li>
+                <li><span class="step-num">2</span> Tap "Send" and enter the email below</li>
+                <li><span class="step-num">3</span> Enter your subscription amount</li>
+                <li><span class="step-num">4</span> <strong style="color:rgba(255,200,80,0.9);">IMPORTANT:</strong> Select "Friends &amp; Family"</li>
+                <li><span class="step-num">5</span> In the note, write: BASIC, VIP, or WHATSAPP</li>
+                <li><span class="step-num">6</span> Send and forward the receipt to me</li>
+              </ul>
+              <div class="address-box" style="margin-top:1.25rem;">
+                <div>
+                  <div style="font-size:0.7rem; color:var(--muted); margin-bottom:0.25rem; text-transform:uppercase; letter-spacing:0.08em;">PayPal Email</div>
+                  <div class="address-text">mariiutrera@gmail.com</div>
+                </div>
+                <button class="copy-btn" onclick="copyText('mariiutrera@gmail.com', this)">Copy</button>
+              </div>
+              <div class="warning-box">
+                &#9888;&#65039; Do NOT send as "Goods &amp; Services" — this may result in your payment being reversed.
+              </div>
+            </div>
+
+            <!-- BITCOIN -->
+            <div class="pay-card fade-up">
+              <div class="pay-header">
+                <div class="pay-icon bitcoin">&#8383;</div>
+                <div>
+                  <div class="pay-title">Bitcoin (BTC)</div>
+                  <div class="pay-sub">Crypto &bull; Global &bull; Anonymous</div>
+                </div>
+              </div>
+              <ul class="pay-steps">
+                <li><span class="step-num">1</span> Open your Bitcoin wallet or exchange app</li>
+                <li><span class="step-num">2</span> Tap "Send" and paste the address below</li>
+                <li><span class="step-num">3</span> Enter the USD equivalent of your tier</li>
+                <li><span class="step-num">4</span> Confirm and send the transaction</li>
+                <li><span class="step-num">5</span> Copy your transaction ID (TXID)</li>
+                <li><span class="step-num">6</span> Send TXID to me on Instagram or email</li>
+              </ul>
+              <div class="address-box" style="margin-top:1.25rem;">
+                <div>
+                  <div style="font-size:0.7rem; color:var(--muted); margin-bottom:0.25rem; text-transform:uppercase; letter-spacing:0.08em;">BTC Address</div>
+                  <div class="address-text" id="btc-addr">1A2B3C4D5E6F7G8H9I0J1K2L3M4N5O6P7Q8R</div>
+                </div>
+                <button class="copy-btn" onclick="copyText('1A2B3C4D5E6F7G8H9I0J1K2L3M4N5O6P7Q8R', this)">Copy</button>
+              </div>
+            </div>
+
+            <!-- ETHEREUM -->
+            <div class="pay-card fade-up">
+              <div class="pay-header">
+                <div class="pay-icon ethereum">&#9830;</div>
+                <div>
+                  <div class="pay-title">Ethereum (ETH)</div>
+                  <div class="pay-sub">Crypto &bull; Global &bull; Anonymous</div>
+                </div>
+              </div>
+              <ul class="pay-steps">
+                <li><span class="step-num">1</span> Open your Ethereum wallet or exchange app</li>
+                <li><span class="step-num">2</span> Tap "Send" and paste the address below</li>
+                <li><span class="step-num">3</span> Enter the USD equivalent of your tier</li>
+                <li><span class="step-num">4</span> Confirm and send the transaction</li>
+                <li><span class="step-num">5</span> Copy your transaction hash</li>
+                <li><span class="step-num">6</span> Send the hash to me on Instagram or email</li>
+              </ul>
+              <div class="address-box" style="margin-top:1.25rem;">
+                <div>
+                  <div style="font-size:0.7rem; color:var(--muted); margin-bottom:0.25rem; text-transform:uppercase; letter-spacing:0.08em;">ETH Address</div>
+                  <div class="address-text">0xAbC1234567890dEf1234567890AbCdEf12345678</div>
+                </div>
+                <button class="copy-btn" onclick="copyText('0xAbC1234567890dEf1234567890AbCdEf12345678', this)">Copy</button>
+              </div>
+            </div>
+
+          </div><!-- /pay-grid -->
+
+          <!-- AFTER PAYMENT -->
+          <div class="after-payment fade-up">
+            <h3>After You Pay — What Happens Next?</h3>
+            <div class="after-steps">
+              <div class="after-step">
+                <span class="step-num" style="background:linear-gradient(135deg,#7b2fff,#e8309a);">1</span>
+                <span>Send your <strong>payment proof</strong> (screenshot or transaction ID) via Instagram DM <strong>@mariiutrera</strong> or email <strong>mariiutrera@proton.me</strong></span>
+              </div>
+              <div class="after-step">
+                <span class="step-num" style="background:linear-gradient(135deg,#7b2fff,#e8309a);">2</span>
+                <span>Include your preferred <strong>tier name</strong> in the message: BASIC, VIP, or WHATSAPP</span>
+              </div>
+              <div class="after-step">
+                <span class="step-num" style="background:linear-gradient(135deg,#7b2fff,#e8309a);">3</span>
+                <span>I will respond within <strong>24 hours</strong> and grant your access within <strong>48 hours</strong></span>
+              </div>
+              <div class="after-step">
+                <span class="step-num" style="background:linear-gradient(135deg,#7b2fff,#e8309a);">4</span>
+                <span>Enjoy your exclusive content. Welcome to the inner circle!</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-logo">Mariiutrera</div>
+        <div class="footer-links">
+          <a onclick="showPage('page-home')">Home</a>
+          <a onclick="scrollToSection('pricing')">Pricing</a>
+          <a onclick="showPage('page-vip')">VIP WhatsApp</a>
+        </div>
+        <p>&copy; 2025 Mariiutrera. All rights reserved. Adult content — 18+ only.</p>
+      </footer>
+    </div>
+  </div><!-- /page-pay -->
+
+
+  <!-- ==================== PAGE: VIP WHATSAPP ==================== -->
+  <div id="page-vip" class="page">
+    <div style="padding-top:64px;">
+      <section id="vip-whatsapp">
+        <div class="container">
+
+          <div class="vip-hero fade-up">
+            <div class="vip-crown">&#128081;</div>
+            <h1 class="vip-title">The Inner Circle</h1>
+            <p class="vip-sub">
+              You've unlocked the most exclusive level. Direct access. Real conversations.
+              A private line available to only a select few.
+            </p>
+            <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+              &#128241; Join My Private WhatsApp
+            </a>
+            <div class="vip-note">
+              &#128274; Button activates after payment verification. DM me on Instagram @mariiutrera to verify.
+            </div>
+          </div>
+
+          <div class="vip-features">
+            <div class="vip-feature fade-up">
+              <div class="vip-feature-icon">&#128172;</div>
+              <h4>Real-Time Chat</h4>
+              <p>Message me directly on WhatsApp. Actual conversations, not automated responses.</p>
+            </div>
+            <div class="vip-feature fade-up">
+              <div class="vip-feature-icon">&#127775;</div>
+              <h4>Custom Content</h4>
+              <p>Request personalized content made just for you. Your fantasy, my creation.</p>
+            </div>
+            <div class="vip-feature fade-up">
+              <div class="vip-feature-icon">&#128222;</div>
+              <h4>Voice Messages</h4>
+              <p>Exclusive voice messages and audio content only available to WhatsApp subscribers.</p>
+            </div>
+          </div>
+
+          <div class="testimonials">
+            <h3>What Subscribers Say</h3>
+            <div class="testi-grid">
+              <div class="testi-card fade-up">
+                <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testi-text">"Best decision I ever made. The WhatsApp access is unreal — she actually responds and the content is absolutely fire. Worth every penny."</p>
+                <div class="testi-author">S.M. &mdash; VIP Subscriber</div>
+              </div>
+              <div class="testi-card fade-up">
+                <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testi-text">"I have subscribed to many creators. Mariiutrera is the only one who actually makes you feel seen. The custom content request was beyond my expectations."</p>
+                <div class="testi-author">J.R. &mdash; Private WhatsApp Member</div>
+              </div>
+              <div class="testi-card fade-up">
+                <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testi-text">"Started with Basic, upgraded to WhatsApp within a week. The quality and personal attention is insane. She remembered my name. Absolute queen."</p>
+                <div class="testi-author">K.T. &mdash; Subscriber Since Day 1</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align:center; margin-top:4rem; padding:3rem; background:var(--bg2); border:1px solid rgba(37,211,102,0.15); border-radius:16px;" class="fade-up">
+            <h3 style="font-size:1.5rem; font-weight:800; margin-bottom:1rem;">Ready to Join?</h3>
+            <p style="color:var(--muted); margin-bottom:2rem;">Subscribe to the Private WhatsApp tier for $75/month and get instant access.</p>
+            <button class="btn-primary" onclick="showPage('page-pay')">Subscribe — $75/month</button>
+          </div>
+
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-logo">Mariiutrera</div>
+        <div class="footer-links">
+          <a onclick="showPage('page-home')">Home</a>
+          <a onclick="scrollToSection('pricing')">Pricing</a>
+          <a onclick="showPage('page-pay')">How to Pay</a>
+        </div>
+        <p>&copy; 2025 Mariiutrera. All rights reserved. Adult content — 18+ only.</p>
+      </footer>
+    </div>
+  </div><!-- /page-vip -->
+
+</div><!-- /site -->
+
+<!-- TOAST -->
+<div id="toast"><span></span></div>
+
+<script src="app.js"></script>
+</body>
+</html>
